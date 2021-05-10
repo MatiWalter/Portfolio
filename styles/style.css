@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 5%;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+.logo {
+  border: 2px solid gray;
+  border-radius: 50%;
+  color: black;
+}
+
+#principal {
+  padding-top: 30%;
+}
+
+.top-button{
+  color: black;
+  text-decoration: none;
+  width: 8%;
+}
