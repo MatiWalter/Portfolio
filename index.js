@@ -11,10 +11,4 @@ document.addEventListener("DOMContentLoaded", function(){
     e.stopPropagation();
     bsOffcanvas.toggle();
   });
-
-  // document.getElementById("screen").addEventListener('click', (e) => {
-  //   e.preventDefault();
-  //   e.stopPropagation();
-  //   bsOffcanvas.toggle();
-  // });
 })
