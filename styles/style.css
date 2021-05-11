@@ -4,22 +4,16 @@
   padding: 0;
 }
 
-section {
-  padding-top: 5%;
-}
-
 .icon {
   font-size: 35px;
 }
 
-.logo {
-  border: 2px solid gray;
-  border-radius: 50%;
-  color: black;
+.offcanvas {
+  width: 50vh;
 }
 
-#principal {
-  padding-top: 30%;
+.menu-item {
+  color: #fff !important;
 }
 
 .top-button{
@@ -27,3 +21,39 @@ section {
   text-decoration: none;
   width: 8%;
 }
+
+.section {
+  height: 94vh;
+  margin-top: 30%;
+}
+
+#about {
+  margin-top: 15%
+} 
+ 
+#skills {
+  margin-top: 15%;
+}
+
+#services {
+  margin-top: 20%;
+}
+
+#projects {
+  margin-top: 15%;
+}
+
+.contact {
+  margin-top: 15%;
+}  
+
+.placeholder {
+  background-color: gray;
+  height: 200px;
+  width: 100%;
+}
+
+#projects-section {
+  margin-top: 32%;
+}
+
