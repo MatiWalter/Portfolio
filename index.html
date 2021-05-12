@@ -14,179 +14,209 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <button class="navbar-toggler" id="OpenMenu">
-          <span class="navbar-toggler-icon fs-6"></span>
-        </button>
-        <a class="navbar-brand" href="#">Matías</a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-scroll="true"
-          data-bs-backdrop="false">
-          <div class="offcanvas-header bg-light">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div class="container">
+    <!-- Navbar -->
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+          <div class="container-fluid">
+            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Matías Walter</a>
+
+            <div class="navbar-collapse offcanvas-collapse">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mb-1">
+                  <a class="nav-link menu-item" href="#">Home</a>
+                </li>
+                <li class="nav-item mb-1">
+                  <a class="nav-link menu-item" href="#about">About</a>
+                </li>
+                <li class="nav-item mb-1">
+                  <a class="nav-link menu-item" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item mb-1">
+                  <a class="nav-link menu-item" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item mb-1">
+                  <a class="nav-link menu-item" href="#contact">Contact
+                    me</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body flex-row pt-5 bg-dark">
-            <ul class="navbar-nav p-5">
-              <li class="nav-item mb-1">
-                <a class="nav-link active menu-item" data-bs-dismiss="offcanvas" role="button" aria-current="page"
-                  href="#">Home</a>
-              </li>
-              <li class="nav-item mb-1">
-                <a class="nav-link menu-item" data-bs-dismiss="offcanvas" role="button" href="#about">About</a>
-              </li>
-              <li class="nav-item mb-1">
-                <a class="nav-link menu-item" data-bs-dismiss="offcanvas" role="button" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item mb-1">
-                <a class="nav-link menu-item" data-bs-dismiss="offcanvas" role="button" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item mb-1">
-                <a class="nav-link menu-item" data-bs-dismiss="offcanvas" role="button" href="#contact">Contact me</a>
-              </li>
-            </ul>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div class="row" id="home-row">
+      <div class="section d-flex justify-content-center" id="home">
+        <div class="col-12 col-md-9 col-lg-6">
+          <div class="container">
+            <div class="container d-flex flex-column align-items-center">
+              <div class="col-6">
+                <img class="w-100" src="./assets/profile.png" alt="profile">
+              </div>
+              <h1 class="mt-2 mb-0">Matías Walter</h1>
+              <p class="text-center">Frontend Developer</p>
+            </div>
+
+            <div class="container d-flex justify-content-center mb-5 mt-2 fs-1">
+              <a class="text-dark me-3" href="https://github.com/MatiWalter" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a class="text-dark" href="https://www.linkedin.com/in/matias-walter/" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+              <div class="col-9 d-grid">
+                <button class="btn btn-dark ">
+                  Download Resume
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
 
-  <main>
-
-    <section class="section" id="home">
-      <div class="container">
-        <div class="container d-flex flex-column align-items-center">
-          <img class="w-50" src="./assets/profile.png" alt="profile">
-          <h1 class="mt-2 mb-0">Matías Walter</h1>
-          <p>Frontend Developer</p>
+    <!-- About -->
+    <div id="about"></div>
+    <div class="row">
+      <div class=".container section">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9">
+            <div class="card-body">
+              <p class="card-text">Hi, I'm a frontend developer, passionate about creating and developing web
+                interfaces.
+                Also
+                I study
+                Information Systems degree in <a href="http://www.unlu.edu.ar/carg-sistemas.html"
+                  target="_blank">Universidad
+                  Nacional de Luján</a>
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div class="container d-flex justify-content-center mb-5 mt-2 fs-1">
-          <a class="text-dark me-3" href="https://github.com/MatiWalter" target="_blank"><i
-              class="fab fa-github"></i></a>
-          <a class="text-dark" href="https://www.linkedin.com/in/matias-walter/" target="_blank"><i
-              class="fab fa-linkedin"></i></a>
+        <div class="row d-flex justify-content-center">
+          <div class="col-11 col-md-9 col-lg-6">
+            <img class="rounded img-fluid" src="assets/myself.jpg" alt="myself">
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="row justify-content-center mt-5">
-          <div class="col-9 d-grid">
-            <button class="btn btn-dark ">
-              Download Resume
+    <!-- Skills -->
+    <div id="skills"></div>
+    <div class="row">
+      <div class="section d-flex flex-column pt-2">
+        <h2 class="text-center">Skills</h2>
+        <div class="d-flex mt-4 flex-column align-items-start">
+          <div class="container d-flex align-items-center mb-1">
+            <span class="icon" style="color: #61dafb;">
+              <i class="fab fa-react me-4"></i>
+            </span>
+            <span><code>const [state, setState] = useState(initialState);</code></span>
+          </div>
+          <hr class="w-100">
+          <div class="container d-flex align-items-center mb-1">
+            <span class="icon" style="color: #fcdc00;">
+              <i class="fab fa-js-square me-4"></i>
+            </span>
+            <span><code>function () => { <br><span class="me-3"></span>console.log("Hi, I'm Matías");<br>}</code></span>
+          </div>
+          <hr class="w-100">
+          <div class="container d-flex align-items-center mb-1">
+            <span class="icon" style="color: #94d82d;">
+              <i class="fab fa-node-js me-4"></i>
+            </span>
+            <span><code>app.listen(3000, () => { <br><span class="me-3"></span>console.log("Listening at <br><span class="me-3"></span>http://localhost:3000");<br>})</code></span>
+          </div>
+          <hr class="w-100">
+          <div class="container d-flex align-items-center mb-1">
+            <span class="icon" style="color: #f06529;">
+              <i class="fab fa-html5 me-4"></i>
+            </span>
+            <span><code>&lt;h1&gt;</code>This is a H1 tag<code>&lt;/h1&gt;</code></span>
+          </div>
+          <hr class="w-100">
+          <div class="container d-flex align-items-center mb-1">
+            <span class="icon" style="color: dodgerblue">
+              <i class="fab fa-css3-alt me-4"></i>
+            </span>
+            <span><code>body { margin: 0; padding: 0}</code></span>
+          </div>
+          <hr class="w-100">
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects"></div>
+    <div class="row" id="projects-section">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+        <div class="d-flex flex-column align-items-center">
+          <div class="w-75">
+            <img src="./assets/gifSearcher-mobile.png" class="card-img-top" alt="gifSearcher app">
+            <div class="card-body">
+              <h5 class="card-title">HeroesApp</h5>
+              <p class="card-text">A simple web app made in React using Giphy API</p>
+              <a href="https://github.com/MatiWalter/react-gifSearcherApp" target="_blank"
+                class="btn btn-primary">Source
+                code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+        <div class="d-flex flex-column align-items-center">
+          <div class="w-75">
+            <img src="./assets/flexbox-mobile.png" class="card-img-top" alt="flexbox page">
+            <div class="card-body">
+              <h5 class="card-title">Flexbox and Media Queries</h5>
+              <p class="card-text">A simple web app made with HTML and CSS</p>
+              <a href="https://github.com/MatiWalter/CSS-flexbox-mediaQueries" target="_blank"
+                class="btn btn-primary">Source code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-100">
+    </div>
+
+    <!-- Contactme -->
+    <div id="contact"></div>
+    <div class="row">
+      <div class="section contact">
+        <div class="container">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-control mb-3">
+          <label class="form-label">Your Email</label>
+          <input type="text" class="form-control mb-3">
+          <label class="form-label">Your Text</label>
+          <textarea class="form-control mb-3" rows="10"></textarea>
+          <div class="col-12 d-flex justify-content-center">
+            <button class="btn btn-primary">
+              Sumbit
             </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <div id="about"></div>
-
-    <section class="section">
-      <div class="card-body">
-        <p class="card-text">Hi, I'm a frontend developer, passionate about creating and developing web interfaces. Also
-          I study
-          Information Systems degree in <a href="http://www.unlu.edu.ar/carg-sistemas.html" target="_blank">Universidad
-            Nacional de Luján</a>
-        </p>
-        <img class="card-img-top" src="assets/myself.jpg" alt="myself">
-      </div>
-    </section>
-
-    <div id="skills"></div>
-
-    <section class="section d-flex flex-column pt-2">
-      <h2 class="text-center">Skills</h2>
-      <div class="d-flex mt-4 flex-column align-items-start">
-        <div class="container d-flex align-items-center mb-1">
-          <span class="icon" style="color: #61dafb;">
-            <i class="fab fa-react me-4"></i>
-          </span>
-          <span><code>const [state, setState] = useState(initialState);</code></span>
-        </div>
-        <hr class="w-100">
-        <div class="container d-flex align-items-center mb-1">
-          <span class="icon" style="color: #fcdc00;">
-            <i class="fab fa-js-square me-4"></i>
-          </span>
-          <span><code>function () => { <br><span class="me-3"></span>console.log("Hi, I'm Matías");<br>}</code></span>
-        </div>
-        <hr class="w-100">
-        <div class="container d-flex align-items-center mb-1">
-          <span class="icon" style="color: #94d82d;">
-            <i class="fab fa-node-js me-4"></i>
-          </span>
-          <span><code>app.listen(3000, () => { <br><span class="me-3"></span>console.log("Listening at <br><span class="me-3"></span>http://localhost:3000");<br>})</code></span>
-        </div>
-        <hr class="w-100">
-        <div class="container d-flex align-items-center mb-1">
-          <span class="icon" style="color: #f06529;">
-            <i class="fab fa-html5 me-4"></i>
-          </span>
-          <span><code>&lt;h1&gt;</code>This is a H1 tag<code>&lt;/h1&gt;</code></span>
-        </div>
-        <hr class="w-100">
-        <div class="container d-flex align-items-center mb-1">
-          <span class="icon" style="color: dodgerblue">
-            <i class="fab fa-css3-alt me-4"></i>
-          </span>
-          <span><code>body { margin: 0; padding: 0}</code></span>
-        </div>
-        <hr class="w-100">
-      </div>
-    </section>
-
-    <div id="projects"></div>
-
-    <section id="projects-section">
-      <article class="d-flex flex-column align-items-center">
-        <div class="w-75">
-          <img src="./assets/gifSearcher-mobile.png" class="card-img-top" alt="gifSearcher app">
-          <div class="card-body">
-            <h5 class="card-title">HeroesApp</h5>
-            <p class="card-text">A simple web app made in React using Giphy API</p>
-            <a href="https://github.com/MatiWalter/react-gifSearcherApp" target="_blank" class="btn btn-primary">Source code</a>
-          </div>
-        </div>
-        <hr class="w-100">
-      </article>
-      <article class="d-flex flex-column align-items-center">
-        <div class="w-75">
-          <img src="./assets/flexbox-mobile.png" class="card-img-top" alt="flexbox page">
-          <div class="card-body">
-            <h5 class="card-title">Flexbox and Media Queries</h5>
-            <p class="card-text">A simple web app made with HTML and CSS</p>
-            <a href="https://github.com/MatiWalter/CSS-flexbox-mediaQueries" target="_blank" class="btn btn-primary">Source code</a>
-          </div>
-        </div>
-        <hr class="w-100">
-      </article>
-    </section>
-
-    <div id="contact"></div>
-
-    <section class="section contact">
-      <div class="container">
-        <label class="form-label">Your Name</label>
-        <input type="text" class="form-control mb-3">
-        <label class="form-label">Your Email</label>
-        <input type="text" class="form-control mb-3">
-        <label class="form-label">Your Text</label>
-        <textarea class="form-control mb-3" rows="10"></textarea>
-        <div class="col-12 d-flex justify-content-center">
-          <button class="btn btn-primary">
-            Sumbit
-          </button>
-        </div>
-      </div>
-    </section>
-
-  </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
     crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <script src="offcanvas.js"></script>
 </body>
 
 </html>

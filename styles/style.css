@@ -12,42 +12,48 @@
   width: 50vh;
 }
 
-.menu-item {
-  color: #fff !important;
-}
-
 .section {
   height: 94vh;
+  margin-top: 15%;
+}
+
+#home-row {
   margin-top: 30%;
 }
 
-#about {
-  margin-top: 15%
-} 
- 
-#skills {
-  margin-top: 15%;
-}
-
-#services {
-  margin-top: 20%;
-}
-
-#projects {
-  margin-top: 15%;
-}
-
-.contact {
-  margin-top: 15%;
-}  
-
-.placeholder {
-  background-color: gray;
-  height: 200px;
-  width: 100%;
-}
-
 #projects-section {
-  margin-top: 32%;
+  margin-top: 50px;
 }
+
+@media screen and (min-width: 768px) {
+  #home-row {
+    margin-top: 5%;
+  }
+  .section {
+    height: 100vh;
+    margin-top: 12%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; 
+    bottom: 0;
+    right: 100%;
+    width: 80%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: rgba(52, 58, 64, 0.9);
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(99%);
+  }
+} 
+
+
 
