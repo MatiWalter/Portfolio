@@ -53,6 +53,10 @@
     visibility: visible;
     transform: translateX(99%);
   }
+  .offcanvas-collapse.close {
+    visibility: hidden;
+    transform: translateX(-99%);
+  }
 } 
 
 
