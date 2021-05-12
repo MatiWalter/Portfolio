@@ -22,7 +22,11 @@
 }
 
 #projects-section {
-  margin-top: 50px;
+  margin-top: 70px;
+}
+
+#contact {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
