@@ -8,7 +8,7 @@
 
 * Add more projects
 
-* Make the portfolio responsive for desktop (Mobile first)
+* Make the portfolio responsive for desktop (Mobile first now)
 
 * Add functionality to the contact form
 
