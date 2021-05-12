@@ -127,7 +127,7 @@
             <span class="icon" style="color: #fcdc00;">
               <i class="fab fa-js-square me-4"></i>
             </span>
-            <span><code>function () => { <br><span class="me-3"></span>console.log("Hi, I'm Matías");<br>}</code></span>
+            <span><code>function () => { <br><span class="me-3"></span>console.log("Hi, I'm <br><span class="me-3"></span>Matías");<br>}</code></span>
           </div>
           <hr class="w-100">
           <div class="container d-flex align-items-center mb-1">
@@ -158,32 +158,34 @@
     <!-- Projects -->
     <div id="projects"></div>
     <div class="row" id="projects-section">
-      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-12">
         <div class="d-flex flex-column align-items-center">
-          <div class="w-75">
-            <img src="./assets/gifSearcher-mobile.png" class="card-img-top" alt="gifSearcher app">
+            <picture>
+              <source srcset="./assets/gifSearcher.png" media="(min-width: 992px)">
+              <img src="./assets/gifSearcher-mobile.png" class="project-img" alt="gifSearcher app">
+            </picture>
             <div class="card-body">
               <h5 class="card-title">HeroesApp</h5>
               <p class="card-text">A simple web app made in React using Giphy API</p>
-              <a href="https://github.com/MatiWalter/react-gifSearcherApp" target="_blank"
+              <button href="https://github.com/MatiWalter/react-gifSearcherApp" target="_blank"
                 class="btn btn-primary">Source
-                code</a>
+                code</button>
             </div>
-          </div>
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-12">
         <div class="d-flex flex-column align-items-center">
-          <div class="w-75">
-            <img src="./assets/flexbox-mobile.png" class="card-img-top" alt="flexbox page">
+            <picture>
+              <source media="(min-width: 992px)" srcset="./assets/flexbox.png">
+              <img src="./assets/flexbox-mobile.png" class="project-img" alt="flexbox page">
+            </picture>
             <div class="card-body">
               <h5 class="card-title">Flexbox and Media Queries</h5>
               <p class="card-text">A simple web app made with HTML and CSS</p>
-              <a href="https://github.com/MatiWalter/CSS-flexbox-mediaQueries" target="_blank"
-                class="btn btn-primary">Source code</a>
+              <button href="https://github.com/MatiWalter/CSS-flexbox-mediaQueries" target="_blank"
+                class="btn btn-primary">Source code</button>
             </div>
-          </div>
         </div>
       </div>
       <hr class="w-100">

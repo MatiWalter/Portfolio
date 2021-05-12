@@ -29,6 +29,10 @@
   margin-top: 20px;
 }
 
+.project-img {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   #home-row {
     margin-top: 5%;
@@ -36,6 +40,9 @@
   .section {
     height: 100vh;
     margin-top: 12%;
+  }
+  #projects-section {
+    margin-top: 0px;
   }
 }
 
@@ -60,6 +67,9 @@
   .offcanvas-collapse.close {
     visibility: hidden;
     transform: translateX(-99%);
+  }
+  .project-img {
+    height: 100%;
   }
 } 
 
