@@ -88,6 +88,7 @@
     <div id="about"></div>
     <div class="row">
       <div class=".container section">
+        <h2 class="text-center mb-3">About Me</h2>
         <div class="row justify-content-center">
           <div class="col-12 col-md-9">
             <div class="card-body">
@@ -102,9 +103,9 @@
             </div>
           </div>
         </div>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mb-5">
           <div class="col-11 col-md-9 col-lg-6">
-            <img class="rounded img-fluid" src="assets/myself.jpg" alt="myself">
+            <img class="rounded img-fluid" src="assets/me.jpg" alt="myself">
           </div>
         </div>
       </div>
@@ -127,14 +128,14 @@
             <span class="icon" style="color: #fcdc00;">
               <i class="fab fa-js-square me-4"></i>
             </span>
-            <span><code>function () => { <br><span class="me-3"></span>console.log("Hi, I'm <br><span class="me-3"></span>Matías");<br>}</code></span>
+            <span><code>function () => { <br><span class="me-3"></span>console.log("Hi, I'm Matías");<br>}</code></span>
           </div>
           <hr class="w-100">
           <div class="container d-flex align-items-center mb-1">
             <span class="icon" style="color: #94d82d;">
               <i class="fab fa-node-js me-4"></i>
             </span>
-            <span><code>app.listen(3000, () => { <br><span class="me-3"></span>console.log("Listening at <br><span class="me-3"></span>http://localhost:3000");<br>})</code></span>
+            <span><code>app.listen(3000, () => { <br><span class="me-3"></span>console.log("Listening at http://localhost:3000");<br>})</code></span>
           </div>
           <hr class="w-100">
           <div class="container d-flex align-items-center mb-1">
@@ -148,7 +149,7 @@
             <span class="icon" style="color: dodgerblue">
               <i class="fab fa-css3-alt me-4"></i>
             </span>
-            <span><code>body { margin: 0; padding: 0}</code></span>
+            <span><code>body { <br><span class="me-3"></span>margin: 0; <br><span class="me-3"></span>padding: 0 <br>}</code></span>
           </div>
           <hr class="w-100">
         </div>
@@ -157,51 +158,69 @@
 
     <!-- Projects -->
     <div id="projects"></div>
-    <div class="row" id="projects-section">
-      <div class="col-12 col-sm-6 col-md-6 col-lg-12">
-        <div class="d-flex flex-column align-items-center">
-            <picture>
-              <source srcset="./assets/gifSearcher.png" media="(min-width: 992px)">
-              <img src="./assets/gifSearcher-mobile.png" class="project-img" alt="gifSearcher app">
-            </picture>
-            <div class="card-body">
-              <h5 class="card-title">HeroesApp</h5>
-              <p class="card-text">A simple web app made in React using Giphy API</p>
-              <button href="https://github.com/MatiWalter/react-gifSearcherApp" target="_blank"
-                class="btn btn-primary">Source
-                code</button>
+    <div class="row justify-content-center" id="projects-section">
+      <div class="col-12 col-md-12">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source srcset="./assets/gifSearcher.png" media="(min-width: 768px)">
+                <img src="./assets/gifSearcher-mobile.png" class="project-img" alt="gifSearcher app">
+              </picture>
+              <div class="carousel-caption">
+                <a href="https://github.com/MatiWalter/react-gifSearcherApp" target="_blank"
+                  class="btn btn-primary">Source
+                  code</a>
+                <a class="btn btn-primary" href="https://matiwalter.github.io/react-gifSearcherApp/" target="_blank"
+                  type="button">View demo</a>
+              </div>
             </div>
+            <div class="carousel-item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./assets/flexbox.png">
+                <img src="./assets/flexbox-mobile.png" class="project-img" alt="flexbox page">
+              </picture>
+              <div class="carousel-caption">
+                <a href="https://github.com/MatiWalter/CSS-flexbox-mediaQueries" target="_blank"
+                  class="btn btn-primary">Source code</a>
+                <a class="btn btn-primary" href="https://matiwalter.github.io/CSS-flexbox-mediaQueries/" target="_blank"
+                  type="button">View demo</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-
-      <div class="col-12 col-sm-6 col-md-6 col-lg-12">
-        <div class="d-flex flex-column align-items-center">
-            <picture>
-              <source media="(min-width: 992px)" srcset="./assets/flexbox.png">
-              <img src="./assets/flexbox-mobile.png" class="project-img" alt="flexbox page">
-            </picture>
-            <div class="card-body">
-              <h5 class="card-title">Flexbox and Media Queries</h5>
-              <p class="card-text">A simple web app made with HTML and CSS</p>
-              <button href="https://github.com/MatiWalter/CSS-flexbox-mediaQueries" target="_blank"
-                class="btn btn-primary">Source code</button>
-            </div>
-        </div>
-      </div>
-      <hr class="w-100">
     </div>
 
     <!-- Contactme -->
     <div id="contactme"></div>
     <div class="row" id="contact">
       <div class="section">
+        <h2 class="text-center mb-5">Get in Touch</h2>
         <div class="container">
-          <label class="form-label">Your Name</label>
+          <label class="form-label">Name</label>
           <input type="text" class="form-control mb-3">
-          <label class="form-label">Your Email</label>
+          <label class="form-label">Email</label>
           <input type="text" class="form-control mb-3">
-          <label class="form-label">Your Text</label>
-          <textarea class="form-control mb-3" rows="10"></textarea>
+          <label class="form-label">Message</label>
+          <textarea class="form-control mb-3" rows="8"></textarea>
           <div class="col-12 d-flex justify-content-center">
             <button class="btn btn-primary">
               Sumbit

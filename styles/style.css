@@ -42,7 +42,20 @@
     margin-top: 12%;
   }
   #projects-section {
-    margin-top: 0px;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    margin-top: 8%;
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .section {
+    height: 100vh;
   }
 }
 
